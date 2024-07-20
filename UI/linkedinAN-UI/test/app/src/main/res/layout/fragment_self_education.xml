@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/primary_green">
+
+        <EditText
+            android:id="@+id/editTextNameOfEducationCenter"
+            android:layout_width="match_parent"
+            android:background="@drawable/custom_edit_text"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="20dp"
+            android:maxLength="40"
+            android:hint="Name of Education Center"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextFieldOfStudy"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edit_text"
+            android:hint="Field of Study"
+            android:maxLength="40"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="20dp"
+            android:inputType="text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edit_text">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Date of Education"
+                android:paddingLeft="20dp"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <DatePicker
+                android:id="@+id/editTextStartDateOfEducation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:calendarViewShown="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edit_text">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End Date of Education"
+                android:paddingLeft="20dp"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:paddingTop="10dp"
+
+                android:paddingBottom="10dp"/>
+
+            <DatePicker
+                android:id="@+id/editTextEndDateOfEducation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:calendarViewShown="false" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextGradeOfEducation"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="10dp"
+            android:hint="Grade of Education"
+            android:background="@drawable/custom_edit_text"
+            android:paddingLeft="20dp"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editTextDescriptionOfEducation"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edit_text"
+            android:hint="Description of Education"
+            android:paddingLeft="20dp"
+            android:maxLength="500"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextOtherDescriptionOf"
+            android:layout_width="match_parent"
+            android:background="@drawable/custom_edit_text"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="10dp"
+            android:hint="Other Description Of"
+            android:paddingLeft="20dp"
+            android:maxLength="1000"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextSkill1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:hint="Skill 1"
+            android:maxLength="40"
+            android:background="@drawable/custom_edit_text"
+            android:paddingLeft="20dp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextSkill2"
+            android:layout_width="match_parent"
+            android:background="@drawable/custom_edit_text"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:layout_marginTop="10dp"
+            android:hint="Skill 2"
+            android:maxLength="40"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="20dp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextSkill3"
+            android:layout_width="match_parent"
+            android:background="@drawable/custom_edit_text"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:layout_marginTop="10dp"
+            android:hint="Skill 3"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="20dp"
+            android:maxLength="40"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextSkill4"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edit_text"
+            android:hint="Skill 4"
+            android:paddingLeft="20dp"
+            android:maxLength="40"
+            android:backgroundTint="@color/white"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextSkill5"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edit_text"
+            android:hint="Skill 5"
+            android:maxLength="40"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="20dp"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:text="Save"
+            android:paddingLeft="20dp" />
+
+    </LinearLayout>
+</ScrollView>

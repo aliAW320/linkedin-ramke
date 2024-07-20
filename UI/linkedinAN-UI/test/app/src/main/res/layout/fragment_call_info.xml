@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".callInfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_green"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/baseline_person_24" />
+
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Name Family"
+                android:textAlignment="center"
+                android:paddingTop="15dp"
+                android:textSize="40dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/email"
+            android:text="email"
+            android:padding="10dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/baseline_alternate_email_24"
+            android:background="@drawable/custom_edit_text"
+            android:textSize="18sp"
+            android:inputType="textEmailAddress"
+            android:layout_margin="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/phone"
+            android:text="phone"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:textSize="18sp"
+            android:inputType="phone"
+            android:drawableLeft="@drawable/call_info"
+            android:background="@drawable/custom_edit_text" />
+
+        <RadioGroup
+            android:id="@+id/phone_type_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+
+            <RadioButton
+                android:id="@+id/mobile_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Phone"
+                android:paddingEnd="20dp" />
+
+            <RadioButton
+                android:id="@+id/home_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home Phone"
+                android:paddingEnd="20dp" />
+
+            <RadioButton
+                android:id="@+id/company_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Company Phone" />
+        </RadioGroup>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/custom_edit_text"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/baseline_location_city_24"
+            android:text="Address"
+            android:id="@+id/address"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quick accesse"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_edit_text"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="quick access"
+            android:drawableLeft="@drawable/baseline_settings_accessibility_24"
+            android:id="@+id/quickAccess"/>
+        <Button
+            android:id="@+id/SaveButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/accent_red"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Save"
+            android:textSize="20sp" />
+    </LinearLayout>
+</FrameLayout>
